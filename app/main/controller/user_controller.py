@@ -12,7 +12,7 @@ class CreateUser(Resource):
     @api.expect(_user, validate=True)
     def post(self):
         data = request.json
-        return create_user(data)
+        return create_user(data=data)
 
 @api.route("/get_user_by_id/<int:id>")
 @api.param("id")

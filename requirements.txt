@@ -2,9 +2,7 @@ alembic==1.7.7
 aniso8601==9.0.1
 attrs==21.4.0
 bcrypt==3.2.0
-cffi==1.15.0
 click==8.1.2
-cx-Oracle==8.3.0
 Flask==2.1.1
 Flask-Bcrypt==1.0.1
 Flask-JWT-Extended==4.4.2
@@ -13,7 +11,6 @@ flask-restx==0.5.1
 Flask-Script==2.0.6
 Flask-SQLAlchemy==2.5.1
 Flask-Testing==0.8.1
-greenlet==1.1.2
 importlib-metadata==4.11.3
 itsdangerous==2.1.2
 Jinja2==3.1.1

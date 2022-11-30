@@ -11,7 +11,7 @@ class User(db.Model):
     def __repr__(self):
         rep = (
             "User: "
-            + self.id
+            + str(self.id)
             + "\n"
             + "Name: "
             + self.name
