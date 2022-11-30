@@ -1,4 +1,4 @@
-# backend_plano_acao - README
+# backend flask com swagger - README
 
 ### Montar projeto local
 
@@ -11,8 +11,6 @@ pip install -r requirements.txt
 Projeto backend
 
 ```bash
-git clone https://github.com/tellusDesenv/backend_plano_acao.git
-cd backend_plano_acao
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
