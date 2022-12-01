@@ -23,7 +23,7 @@ class User(db.Model):
             + self.phone_number
             + "\n"
             + "Date created: "
-            + self.date_created
+            + str(self.date_created)
             + "\n"
         )
         return rep
