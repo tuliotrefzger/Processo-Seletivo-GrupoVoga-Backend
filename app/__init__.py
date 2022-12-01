@@ -1,14 +1,14 @@
 from flask_restx import Api
 from flask import Blueprint
 
-from .main.controller.string_controller import api as string_ns
+from .main.controller.user_controller import api as user_ns
 
 blueprint = Blueprint('api', __name__)
 
 api = Api(blueprint,
-          title='FLASK RESTX API BOILER-PLATE WITH JWT',
+          title='PROCESSO SELETIVO GRUPO VOGA -- BACKEND ',
           version='0.0.1',
-          description='a boilerplate for flask restx web service'
+          description='A boilerplate for flask restx web service.'
           )
 
-api.add_namespace(string_ns, path='/string')
+api.add_namespace(user_ns, path='/')
