@@ -1,59 +1,30 @@
-# backend flask com swagger - README
+### backend flask com swagger - README
 
-### Montar projeto local
+### Montando projeto local
 
+# Clone o repositório a partir com o comando:
 
-Instalar requirements.txt
-```
+git clone git@github.com:tuliotrefzger/Processo-Seletivo-GrupoVoga-Backend.git
+
+# Instale os requerimentos presentes em requirements.txt com o comando:
+
 pip install -r requirements.txt
-```
 
-Projeto backend
+# Inicialize o commando:
 
-```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-export FLASK_APP=manage.py
 flask run
-```
 
-### Testes
+# Acesse o port 5000 abrindo o swagger:
 
-```bash
-flask test
-```
+http://localhost:5000/
+
+# Teste os endpoints presentes em "user"
 
 ## Banco de Dados
 
 ### Executar os comandos ao modificar ou incluir modelos
-``` bash
+
+```bash
 flask db init  # so quando iniciar o banco
 flask db migrate --message 'migration'
-flask db upgrade
 ```
-
-## Docker
-
-### Remoto
-``` bash
-
-```
-
-### Local
-
-
-``` bash
-
-```
-
-Antes do commit executar:
-
-```
-flake8 ./manage.py 
-flake8 ./backend_plano_acao
-flake8 ./tests/
-
-bandit --skip B104 --verbose --recursive ./backend_plano_acao
-bandit --skip B104 --verbose --recursive ./tests
-bandit --skip B104 --verbose --recursive ./manage.py
